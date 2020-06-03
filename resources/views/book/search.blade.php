@@ -23,12 +23,12 @@
     </thead>
     <tbody>
         <tr>
-            <th>{{$book->id}}</th>
-            <td>{{$book->author_id}}</td>
-            <td>{{$book->title}}</td>
-            <td>{{$book->ISBN}}</td>
-            <td>{{$book->pub_year}}</td>
-            <td>{{$book->available}}</td>
+            <th>{{$book->__get("id")}}</th>
+            <td>{{$book->__get("author_id")}}</td>
+            <td>{{$book->__get("title")}}</td>
+            <td>{{$book->__get("ISBN")}}</td>
+            <td>{{$book->__get("pub_year")}}</td>
+            <td>{{$book->__get("available")}}</td>
         </tr>
     </tbody>
 </table>

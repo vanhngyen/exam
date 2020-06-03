@@ -19,9 +19,14 @@ class WebController extends Controller
         ]);
     }
 
-    public function searchbook(){
-        $book = Book::findOrFail();
-        return view("book.find", ["book" => $book]);
+    public function searchbook(Request $request){
+        $book = Book::where("title", $request->bookname)->get();
+        return view("book.find", [
+            "book"=>$book,
+        ]);
     }
+
+
+
 }
 

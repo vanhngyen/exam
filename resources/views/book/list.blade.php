@@ -9,7 +9,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-<h1>List Book</h1>
+<h3 class="card-title">book search</h3>
+<form  role="form" action="{{url("/searchbook")}}" method="POST"  >
+    @method("POST")
+    @csrf
+    <div class="form-group" style="width: 30%">
+        <label for="book">Email address</label>
+        <input type="text" name="bookname" class="form-control" id="book" placeholder="Search....">
+        <button class="btn btn-dark">Search</button>
+    </div>
+</form>
 <table class="table">
     <thead>
     <tr>
