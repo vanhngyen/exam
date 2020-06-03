@@ -25,7 +25,7 @@
     @foreach($books as $book)
     <tr>
         <th>{{$book->__get("id")}}</th>
-{{--        <td>{{$b->__get("author_id")}}</td>--}}
+        <td>{{$book->__get("author_id")}}</td>
         <td>{{$book->__get("title")}}</td>
         <td>{{$book->__get("ISBN")}}</td>
         <td>{{$book->__get("pub_year")}}</td>
