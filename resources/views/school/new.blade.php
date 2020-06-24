@@ -46,6 +46,8 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>
-
+<script type="text/javascript">
+    alert("success !");
+</script>
 </body>
 </html>
