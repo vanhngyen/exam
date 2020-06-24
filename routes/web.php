@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("/listbook","WebController@listbook");
 Route::get("/searchbook/{title}","WebController@searchbook");
+Route::get("/information","WebController@information");
+Route::post("/saveinformation","WebController@saveInformation");
+Route::get("/home","WebController@home");
